@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, paper, scissors</title>
-    <script src="scripts/script.js"> </script>
 </head>
 <body>
-    
+    <div class="container">
+            <div class="title">
+                <h1>ROCK PAPER SCISSORS</h1>
+            </div>
+            <div class="playerBox">
+                <img src="images/470-4703547_icon-user-icon-hd-png-download.png" alt="userIcon" class="userIcon">
+                <img src="images/scissor.png" alt="user Scissors" class="userScissors">
+                <img src="images/paper.png" alt="user paper" class="userPaper">
+                <img src="images/rock.png" alt="user rock" class="userRock">
+                <div class="backgrounds">
+                    <div class="scissorsButtonU"></div>
+                    <div class="paperButtonU"></div>
+                    <div class="rockButtonU"></div>
+                </div>
+            </div>
+            <div class="cpuBox">
+                <img class='cpuIcon'src="images/boticon.png" alt="">
+                <img src="images/scissor.png" alt="cpu Scissors" class="cpuScissors">
+                <img src="images/paper.png" alt="cpu paper" class="cpuPaper">
+                <img src="images/rock.png" alt="cpu rock" class="cpuRock">
+            </div>
+            <div class="currentScore"> 
+                <h1 class="scoreNumber">0 -  0</h1>
+            </div>
+            <div class="totalScore">
+                <h1 class="totalScoreTitle"> Rounds won</h1>
+                <div class="totalScoreNumber">
+                    <h1 class="totalScoreNumber">0 - 0</h1>
+                </div>
+            </div>
+            <div class="console">
+            <p>Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit. Proin porta lobortis 
+            ultrices. In egestas lobortis tincidunt. 
+            Sed pharetra laoreet urna non facilisis</p> 
+        </div>
+    </div>
+    <div class="topBar"></div>
 </body>
+<script src="scripts/script.js"> </script>
 </html>

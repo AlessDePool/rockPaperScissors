@@ -1,0 +1,175 @@
+body {
+    background-color: #ffffff;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+html {
+    height: 100px;
+    min-height: 100px;
+}
+
+.playerBox {
+    height: 420px;
+    width: 190px;
+    background-color: #8d8d8db6;
+    border-radius: 25px;
+    border: 2px #440bd400 solid;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    right: 370px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.cpuBox {
+    height: 420px;
+    width: 190px;
+    background-color:#8d8d8db6;
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+    bottom: 270px;
+    left: 370px;
+    border: 2px #ffffff solid;
+    display: flex;
+    justify-content: center;
+    z-index: 2
+}
+
+.currentScore {
+    height: 100px;
+    width: 240px;
+    background-color: rgb(255, 146, 21);
+    z-index: 100;
+    margin:auto;
+    position: relative;
+    bottom: 400px;
+    border: 2px white solid;
+    border-radius: 40px;
+}
+
+
+.totalScore {
+    height: 150px;
+    width: 300px;
+    background-color: rgb(10, 189, 221);
+    z-index: 100;
+    margin:auto;
+    position: relative;
+    bottom: 340px;
+    border: 2px white solid;
+    border-radius: 25px;
+}
+
+.console {
+    height: 180px;
+    width: 410px;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    margin:auto;
+    position: relative;
+    bottom: 950px;
+    border: 1px black solid;
+    border-radius: 25px;
+    z-index: 0;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+
+.cpuIcon {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+}
+
+.cpuScissors {
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    right: 31px;
+    top: 43px;
+    z-index: 20;
+}
+
+.cpuPaper {
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    top: 150px;
+    z-index: 21;
+}
+
+.cpuRock {
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    top: 260px;
+    left: 32px;
+    z-index: 22;
+}
+
+.userIcon {
+    width: 100px;;
+    height: 80px;
+    position: absolute;
+    z-index: 10;
+    bottom: 334px;
+}
+
+.userScissors {
+    z-index: 11;
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    right: 31px;
+    top: 43px;
+    z-index: 23;
+}
+
+.userPaper {
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    top: 150px;
+    z-index: 24;
+}
+
+.userRock {
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    top: 260px;
+    left: 32px;
+    z-index: 25;
+}
+
+.scoreNumber {
+    text-align: center;
+    position:relative;
+    bottom: 37px;
+    font-size: 60px;
+    color: rgba(37, 37, 37, 0.753)
+}
+
+.totalScoreTitle{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
+.totalScoreNumber {
+    text-align: center;
+    position:relative;
+    bottom: 34px;
+    font-size: 60px;
+    color: rgb(255, 255, 255)
+}

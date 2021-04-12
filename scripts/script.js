@@ -30,6 +30,10 @@
 //Game starter and winner indicator
 let userScore = 0
 let cpuScore = 0
+let userScoreTotal = 0
+let cpuScoreTotal = 0
+
+
 
 function rockPaperScissors() {
 
@@ -71,26 +75,51 @@ function rockPaperScissors() {
     }
     console.log("userScore " + userScore + " " + "-" + " " + cpuScore + " " + "cpuScore")
    
-
-    //Reset function
-
-    function reset() {
+    //resets
+    function softreset() {
         userScore = 0
         cpuScore = 0
         
     }
 
-    //Telling the machine to stop when you reach the highest score and resetting
+    //score counters //added totalScore
+    let userTotalScore
+
     if (userScore === 5) {
-        console.log("User wins! Yay!")
-        reset()
+        console.log("User wins the round! Yay!")
+        userScoreTotal = userScoreTotal + 1
+        console.log("User rounds " + userScoreTotal + " " + "-" + " " + cpuScoreTotal + " " + "Cpu rounds")
+        softreset()
     } else if (cpuScore === 5) {
-        console.log("Oh no! The computer wins!")
-        reset()
+        console.log("Oh no! The computer wins the round!")
+        cpuScoreTotal = cpuScoreTotal + 1
+        softreset()
     } else rockPaperScissors()
+
+    if (userScoreTotal === 5) {
+        console.log("User wins! Yay!")
+        softreset()
+    } else if (cpuScoreTotal === 5) {
+        console.log("The computer wins the game!")
+        softreset()
+    } else rockPaperScissors() 
 }
 
+const console = document.querySelector('.console') //store console in variable
 
-    
+/*
+let playAgain = function() {        //prompts the play again question inside console box
+    const messageContainer = document.createElement('div')
+    messageContainer.classList.add ('.playAgain')
+    messageContainer.textContent = 'Play again?'
+    messageContainer.addEventListener ('click', function (e) {
+        rockPaperScissors()
+    })
+    console.appendChild(messageContainer)
+
+}
+
+//display current score
 
 
+*/
