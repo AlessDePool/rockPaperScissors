@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #272727;
     font-family: 'RocknRoll One', sans-serif;
 }
 
@@ -11,7 +11,8 @@ html {
 .playerBox {
     height: 420px;
     width: 190px;
-    background-color: #8d8d8db6;
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 25px;
     border: 2px #440bd400 solid;
     margin: auto;
@@ -26,13 +27,13 @@ html {
 .cpuBox {
     height: 420px;
     width: 190px;
-    background-color:#8d8d8db6;
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 25px;
     margin: auto;
     position: relative;
     bottom: 270px;
     left: 370px;
-    border: 2px #ffffff solid;
     display: flex;
     justify-content: center;
     z-index: 2
@@ -41,48 +42,53 @@ html {
 .currentScore {
     height: 100px;
     width: 240px;
-    background-color: rgb(255, 146, 21);
+    -webkit-box-shadow: 0 0 14px rgb(29, 29, 29);
+        box-shadow: 0 0 14px rgb(29, 29, 29);
     z-index: 100;
     margin:auto;
     position: relative;
-    bottom: 370px;
-    border: 2px white solid;
+    bottom: 400px;
     border-radius: 40px;
+    background-color: tomato;
 }
 
 
 .totalScore {
     height: 120px;
     width: 280px;
-    background-color: rgb(10, 189, 221);
+    background: linear-gradient(90deg, #732fdf, #bd00ff);
     z-index: 100;
     margin:auto;
     position: relative;
-    bottom: 1000px;
-    border: 2px white solid;
+    bottom: 950px;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     border-radius: 25px;
-    left: 390px
+    left: 0px
 }
 
 .console {
     height: 100px;
     width: 410px;
-    background-color: rgb(255, 255, 255);
+    background-color: #272727;
     z-index: 100;
     margin:auto;
     position: relative;
     bottom: 880px;
-    border: 1px black solid;
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 25px;
     z-index: 0;
     text-align: center;
     padding: 5px;
+    color: rgba(255, 255, 255, 0.897)
 }
 
 .title {
     text-align: center;
     position: relative;
-    top: 110px;
+    top: 20px;
+    color: white;
 }
 
 
@@ -158,21 +164,22 @@ html {
 .scoreNumber {
     text-align: center;
     position:relative;
-    bottom: 37px;
+    bottom: 0px;
     font-size: 60px;
-    color: rgba(37, 37, 37, 0.753)
+    color: #ffffff
 }
 
 .totalScoreTitle{
     text-align: center;
     position: relative;
-    bottom: 15px;
+    bottom: 0px;
+    color: white
 }
 
 .totalScoreNumber {
     text-align: center;
     position:relative;
-    bottom: 56px;
+    bottom: 38px;
     font-size: 60px;
     color: rgb(255, 255, 255)
 }
@@ -193,7 +200,9 @@ html {
 .scissorsButtonU {
     height: 82px;
     width: 82px;
-    background-color: rgb(255, 0, 0);
+    background-color: #732fdf;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     z-index: 12;
     border-radius: 50%;
 }
@@ -201,7 +210,9 @@ html {
 .paperButtonU {
     height: 80px;
     width: 80px;
-    background-color: rgb(255, 0, 0);
+    background-color: #732fdf;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     z-index: 12;
     border-radius: 50%;
 }
@@ -209,7 +220,9 @@ html {
 .rockButtonU {
     height: 80px;
     width: 80px;
-    background-color: rgb(255, 0, 0);
+    background-color: #732fdf;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     z-index: 12;
     border-radius: 50%;
 }
@@ -231,7 +244,9 @@ html {
 .scissorsButtonC {
     height: 82px;
     width: 82px;
-    background-color: rgb(255, 0, 0);
+    background-color: #732fdf;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     z-index: 12;
     border-radius: 50%;
 }
@@ -239,7 +254,9 @@ html {
 .paperButtonC {
     height: 80px;
     width: 80px;
-    background-color: rgb(255, 0, 0);
+    background-color: #732fdf;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     z-index: 12;
     border-radius: 50%;
 }
@@ -247,13 +264,16 @@ html {
 .rockButtonC {
     height: 80px;
     width: 80px;
-    background-color: rgb(255, 0, 0);
+    background-color: #732fdf;
+    -webkit-box-shadow: 0 0 13px rgb(104, 104, 104);
+    box-shadow: 0 0 13px rgb(104, 104, 104);
     z-index: 12;
     border-radius: 50%;
 }
 
 .clicked {
-    border: 2px white solid;
+    -webkit-box-shadow: 0 0 14px rgb(255, 0, 0);
+        box-shadow: 0 0 14px rgb(255, 0, 0);
 }
 
 .stage1 {
@@ -262,13 +282,18 @@ html {
 }
 
 .startButton {
-    height: 30px;
+    height: 23px;
     width: 100px;
     margin: auto;
-    border: 2px black solid;
     position: relative;
     top: 11px;
-    border-radius: 15px;
+    border-radius: 6px;
+    color:rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 10px rgb(71, 97, 97);
+        box-shadow: 0 0 10px rgb(71, 97, 97);
+    font-size: 15px;
+    background: linear-gradient(90deg, #732fdf, #bd00ff)
+    ;
 }
 
 .smallConsole1 {
@@ -280,4 +305,13 @@ html {
     left: 565px;
     border: 1px black solid;
     border-radius: 20px;
+}
+
+.startButton:hover {
+    height: 30px;
+    width: 110px;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    -webkit-box-shadow: 0 0 14px rgb(255, 255, 255);
+        box-shadow: 0 0 14px rgb(255, 255, 255);
 }

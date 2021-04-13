@@ -138,6 +138,9 @@ let tieMessage = function() {
  const totalScoreNumber = document.querySelector('.totalScoreNumber') //totalScoreNumber variable
  let totalScore //display
 
+ totalScore = userRound + " " + "-" + " " + cpuRound
+     totalScoreNumber.textContent = totalScore
+
  //totalScoreNumber display functions
  let userWinRound = function() {
      ++userRound
